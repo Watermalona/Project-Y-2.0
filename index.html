@@ -158,7 +158,7 @@
             let width = 80;
             let x = Math.random() * (canvas.width - width);
             
-            let current = levelSettings[currentLevel] || levelSettings;
+            let current = levelSettings[currentLevel] || levelSettings[1];
             let rand = Math.random();
             let type = "normal";
 
@@ -317,7 +317,7 @@
             }
 
             // 畫樓梯
-            let currentColors = levelSettings[currentLevel] || levelSettings;
+            let currentColors = levelSettings[currentLevel] || levelSettings[1];
             
             platforms.forEach(plat => {
                 if (plat.type === "spike") {
